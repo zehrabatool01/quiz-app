@@ -8,24 +8,31 @@
 :root {
   --main-color: #eed8ab;
   --text-color: #fff;
-  --back-color: #041128;
+  --back-color: #1d1c1c;
 }
 
 body {
   height: 100vh;
   background: var(--back-color);
 }
-
+.quizapp {
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
 .container {
   border: 1px solid var(--back-color);
   background-color: var(--main-color);
   width: 90%;
   margin-inline: auto;
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: block;
   max-width: 800px;
   padding: 30px;
   border-radius: 10px;
+  box-shadow: 0 0 10px var(--main-color);
 }
 
 #heading {
