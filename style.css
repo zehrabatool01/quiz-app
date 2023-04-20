@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: #eed8ab;
+  --text-color: #fff;
+  --back-color: #041128;
+}
+
+body {
+  height: 100vh;
+  background: var(--back-color);
+}
+
+.container {
+  border: 1px solid var(--back-color);
+  background-color: var(--main-color);
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 5rem;
+  display: block;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#heading {
+  color: var(--back-color);
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+#heading span {
+  font-size: 18px;
+}
+#quiz {
+  padding-top: 20px;
+}
+
+#questions {
+  color: var(--back-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.btn {
+  width: 100%;
+  border: 1px solid black;
+  font-size: 20px;
+  text-align: left;
+  padding: 10px;
+  margin: 10px 0;
+  background: var(--text-color);
+  border-radius: 0.5rem;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+#next-btn,
+#playBtn {
+  font-size: 20px;
+  display: block;
+  border: 1px solid var(--back-color);
+  background: var(--back-color);
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#playBtn:hover {
+  transform: scale(1.08);
+}
+
+li {
+  list-style: none;
+}
+.correct {
+  color: darkgreen;
+  background: #9aeabc;
+}
+.incorrect {
+  color: darkred;
+  background: #ff9393;
+}
+.result {
+  text-align: center;
+  color: var(--back-color);
+}
+.result p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .container {
+    left: 30px;
+  }
+}
